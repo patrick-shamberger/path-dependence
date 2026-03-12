@@ -27,24 +27,24 @@ README.md
 path-dependence/
 │
 ├ Experimental Data/      Experimental datasets used for characterization
-├ Modeled Data/           Model-generated datasets fromcharacterization
+├ Modeled Data/           Model-generated datasets from characterization
 │
-├ ACHANGE_characterize.m  Input configuration for characterization
+├ ACHANGE_characterize.m  Inputs for characterization
+│
 ├ ARUN_characterize.m     Runs material characterization workflow
+│  ├ ISHCdis.m            ISHC experimental visualization
+│  ├ PBdis.m              Phase boundary visualization
+│  ├ singlephase.m        Single-phase material properties
+│  └ hys.m                Models outer hysteresis envelope strain behavior
+│
 ├ ARUN_predict.m          Main script for strain prediction
-│
-├ avgstress.m             Calculates average transformation stress
-├ detPB.m                 Constructs detwinned phase boundaries
-├ detwinmart.m            Builds detwinned martensite strain grid
-├ makepath.m              Constructs thermomechanical loading paths
-├ phasepop.m              Populates phase fractions along paths
-├ singlephase.m           Single-phase strain behavior
-├ strainpred.m            Reconstructs strain surfaces
-├ strainpop.m             Populates strain along loading paths
-├ pathdep.m               Applies path-dependent strain corrections
-│
-├ PBdis.m                 Phase boundary visualization
-└ ISHCdis.m               ISHC experimental visualization
+│  ├ makepath.m           Constructs thermomechanical loading paths in σ–T space
+│  ├ avgstress.m          Calculates average forward transformation stress
+│  ├ pathdep.m            Applies path-dependent strain corrections
+│  ├ detwinmart.m         Builds detwinned martensite strain grid
+│  ├ strainpred.m         Reconstructs corrected strain surfaces
+│  ├ phasepop.m           Populates phase fractions along paths
+│  └ strainpop.m          Populates strain along loading paths
 ```
 
 ---
